@@ -1,0 +1,76 @@
+@font-face {
+
+    font-family: Nexa;
+    src: url(Nexa-Heavy.ttf);
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00fbff10;
+    padding: 1rem;
+    /* background-image: url(uruguay.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+main > img#bandera {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1#temporizador {
+
+    width: 50%;
+    text-align: center;
+    background: rgb(255, 190, 0);
+    background: linear-gradient(90deg, rgba(255, 190, 0, 1) 0%, rgba(255, 215, 99, 1) 100%);
+    color: white;
+    font-family: Nexa, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .2);
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 4px solid rgba(0, 0, 0, .1);
+    z-index: 10000;
+}
+
+@media screen and (width <= 1000px) {
+    
+    h1#temporizador {
+
+        font-size: 2rem;
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (width <= 400px) {
+    
+    h1#temporizador {
+
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 2rem;
+    }
+}
